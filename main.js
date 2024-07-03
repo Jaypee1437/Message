@@ -27,7 +27,13 @@ const responses = {
     'monthsary': '06-27-23',
     'punta': 'sige',
     'gets': 'yup',
-    'memories': 'madami diko na tanda ang iba basta alam mo na yun haha'
+    'memories': 'madami diko na tanda ang iba basta alam mo na yun haha',
+    'saan': 'ewan',
+    'kelan': 'wait iisipin ko',
+    '?': 'yup',
+    'tanda': 'ano sa tingin mo',
+    'ba': 'diko alam',
+    'wala': 'ahh'
 };
 
 const chatBox = document.getElementById('chat-box');
