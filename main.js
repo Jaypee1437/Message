@@ -33,7 +33,13 @@ const responses = {
     '?': 'yup',
     'tanda': 'ano sa tingin mo',
     'ba': 'diko alam',
-    'wala': 'ahh'
+    'wala': 'ahh',
+    'sabi': 'ahh oo diko alam',
+    'ewan': 'haha',
+    'ulam': 'itlog',
+    'kain': 'eatwell',
+    'may': 'sige lang',
+    'meron': 'ahh'
 };
 
 const chatBox = document.getElementById('chat-box');
@@ -52,7 +58,7 @@ function sendMessage() {
 }
 
 function generateResponse(message) {
-    let response = "Huh?";
+    let response = "huh?";
 
     for (const key in responses) {
         if (message.includes(key)) {
