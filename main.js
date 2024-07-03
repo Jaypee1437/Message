@@ -42,6 +42,19 @@ const responses = {
     'meron': 'ahh'
 };
 
+const randomResponses = [
+    "wait",
+    "Tell me more.",
+    "diko gets.",
+    "ahh hehe",
+    "omsim",
+    "Hmmm.",
+    "Okay.",
+    "Got it.",
+    "Understood.",
+    "Noted."
+];
+
 const chatBox = document.getElementById('chat-box');
 const userInput = document.getElementById('user-input');
 
@@ -65,6 +78,10 @@ function generateResponse(message) {
             response = responses[key];
             break;
         }
+    }
+
+    if (response === "huh?") {
+        response = randomResponses[Math.floor(Math.random() * randomResponses.length)];
     }
 
     appendMessage(response, 'bot');
