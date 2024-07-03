@@ -23,7 +23,10 @@ const responses = {
     'kailan': 'diko alam',
     'punta': 'ingats',
     'gawin': 'tyt',
-    'hi': 'hello'
+    'hi': 'hello',
+    'monthsary': '06-27-23',
+    'punta': 'sige',
+    'gets': 'yup'
 };
 
 const chatBox = document.getElementById('chat-box');
