@@ -22,7 +22,8 @@ const responses = {
     'sino': 'malay ko',
     'kailan': 'diko alam',
     'punta': 'ingats',
-    'gawin': 'tyt'
+    'gawin': 'tyt',
+    'hi': 'hello'
 };
 
 const chatBox = document.getElementById('chat-box');
