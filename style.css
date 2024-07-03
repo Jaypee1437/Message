@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-details {
+    flex-grow: 1;
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.profile-bio {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 400px; /* Limit maximum width for larger screens */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.chat-box {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-bottom: 10px;
+}
+
+.chat-message {
+    margin: 10px;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.chat-message.bot {
+    background-color: #e0e0e0;
+    text-align: left;
+}
+
+.chat-message.user {
+    background-color: #007bff;
+    color: white;
+    text-align: right;
+}
+
+input[type="text"] {
+    width: calc(100% - 70px);
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .profile-picture {
+        border: 3px solid limegreen;
+        width: 50px;
+        height: 50px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .profile-name {
+        font-size: 1.2em;
+    }
+
+    .profile-bio {
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .chat-container {
+        width: 100%;
+        max-width: none;
+        border-radius: 0;
+    }
+}
